@@ -1,0 +1,142 @@
+/* * {
+  border: dashed 1px red;
+} */
+
+.base {
+  background: url(images/startpage/background.png);
+  background-size: cover;
+  font-family: Roboto;
+  margin: 0;
+  min-height: 1024px;
+  min-width: 1440px;
+}
+
+.header {
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-left: 103px;
+  margin-top: 129px;
+  width: 60%;
+}
+
+.header__title {
+  font-size: 57px;
+  margin: 0 0 8px 0;
+}
+
+.header__description {
+  font-size: 19px;
+  margin: 0;
+}
+
+.level {
+  margin-left: 103px;
+}
+
+.level__choice {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  padding-left: 42px;
+  width: 19%;
+}
+
+.level__choice-item:hover {
+  cursor: pointer;
+}
+
+.level__choice-item:hover::before,
+.active:hover::before,
+.active::before {
+  background: url('images/startpage/rectangle.png') no-repeat;
+  background-size: cover;
+  border: none;
+  content: "";
+  height: 22px;
+  left: 125px;
+  position: absolute;
+  transform: translateY(65%);
+  width: 22px;
+}
+
+.level__choice-item {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-family: Roboto;
+  padding: 0;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button-one {
+  height: 59px;
+  margin-bottom: 24px;
+  width: 200px;
+}
+
+.button-two {
+  height: 59px;
+  margin-bottom: 24px;
+  width: 205px;
+}
+
+.button-three {
+  height: 59px;
+  width: 230px;
+}
+
+.level__start {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.level__start-button {
+  background-color: #d62b2e;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  height: 95px;
+  padding: 0;
+  width: 352px;
+}
+
+.level__start-button:hover {
+  cursor: pointer;
+}
+
+.cards {
+  margin-right: 70px;
+}
+
+.cards__item {
+  height: 341px;
+  width: 218px;
+}
+
+.cards__first {
+  transform: rotate(12deg);
+}
+
+.cards__second {
+  transform: rotate(38deg) translateX(-25px) translateY(15%);
+}
+
+.table-three, .table-six, .table-nine {
+  background: url(images/other/background.png);
+  background-size: cover;
+  min-height: 1024px;
+  min-width: 1440px;
+}
+\n 
