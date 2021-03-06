@@ -1,8 +1,10 @@
-* {
+/* * {
   border: dashed 1px red;
-}
+} */
+
 .base {
-  background: url(images/background.jpg) no-repeat fixed;
+  background: url(images/startpage/background.png);
+  background-size: cover;
   font-family: Roboto;
   margin: 0;
   min-height: 1024px;
@@ -35,16 +37,30 @@
 }
 
 .level__choice {
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 30%;
-  /* margin-bottom: 112px; */
   padding-left: 42px;
   width: 19%;
 }
 
 .level__choice-item:hover {
   cursor: pointer;
+}
+
+.level__choice-item:hover::before,
+.active:hover::before,
+.active::before {
+  background: url('images/startpage/rectangle.png') no-repeat;
+  background-size: cover;
+  border: none;
+  content: "";
+  height: 22px;
+  left: 125px;
+  position: absolute;
+  transform: translateY(65%);
+  width: 22px;
 }
 
 .level__choice-item {
@@ -77,12 +93,9 @@
 }
 
 .level__start {
-  align-items: top;
+  align-items: center;
   display: flex;
-  height: 250px;
   justify-content: space-between;
-  padding-top: 112px;
-  width: 94%;
 }
 
 .level__start-button {
@@ -105,24 +118,25 @@
 
 .cards {
   margin-right: 70px;
-  position: relative;
 }
 
 .cards__item {
   height: 341px;
-  position: absolute;
-  right: 0;
-  top: -50%;
   width: 218px;
 }
 
-.cards__first-one {
-  left: 850px;
-  transform: rotate(11.9deg) translateX(-75px) translateY(10%);;
+.cards__first {
+  transform: rotate(12deg);
 }
 
-.cards__second-one {
-  left: 1201.78px;
-  transform: rotate(39.26deg) translateX(130px) translateY(-25%);
+.cards__second {
+  transform: rotate(38deg) translateX(-25px) translateY(15%);
+}
+
+.table-three, .table-six, .table-nine {
+  background: url(images/other/background.png);
+  background-size: cover;
+  min-height: 1024px;
+  min-width: 1440px;
 }
 \n 

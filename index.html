@@ -14,22 +14,18 @@
     </header>
     <section class="level">
       <main class="level__choice">
-        <button class="level__choice-item button-one">Простой</button>
-        <button class="level__choice-item button-two">Средний</button>
-        <button class="level__choice-item button-three">Сложный</button>
+        <button class="level__choice-item button-one" data-level="3">Простой</button>
+        <button class="level__choice-item button-two" data-level="6">Средний</button>
+        <button class="level__choice-item button-three" data-level="9">Сложный</button>
       </main>
       <div class = "level__start start">
-        <input type="submit" value="Начать игру" class="level__start-button">
+        <button id="start" class="level__start-button">Начать игру</button>
         <div class="start__cards cards">
-          <div class="cards__item cards__first">
-            <img src="images/startpage/cardone.png" alt="first card" class="cards__first-one">
-          </div>
-          <div class="cards__item cards__second">
-            <img src="images/startpage/cardtwo.png" alt="second card" class="cards__second-one">
-          </div>
+          <img src="images/startpage/cardone.png" alt="first card" class="cards__item cards__first">
+          <img src="images/startpage/cardtwo.png" alt="second card" class="cards__item cards__second">
         </div>
       </div>
     </section>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
