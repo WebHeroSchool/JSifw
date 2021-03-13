@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body class = "base">
-    <header class="header">
-      <h1 class="header__title">Выберите уровень сложности:</h1>
-      <p class="header__description">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</p>
-    </header>
-    <section class="level">
-      <main class="level__choice">
-        <button class="level__choice-item button-one" data-level="3">Простой</button>
-        <button class="level__choice-item button-two" data-level="6">Средний</button>
-        <button class="level__choice-item button-three" data-level="9">Сложный</button>
-      </main>
-      <div class = "level__start start">
-        <button id="start" class="level__start-button">Начать игру</button>
-        <div class="start__cards cards">
-          <img src="images/startpage/cardone.png" alt="first card" class="cards__item cards__first">
-          <img src="images/startpage/cardtwo.png" alt="second card" class="cards__item cards__second">
+    <div class = 'main-screen' id ='home'>
+      <header class="main-screen__header header">
+        <h1 class="header__title">Выберите уровень сложности:</h1>
+        <p class="header__description">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</p>
+      </header>
+      <section class="level">
+        <main class="level__choice">
+          <button class="level__choice-item button-one active" data-level="3">Простой</button>
+          <button class="level__choice-item button-two" data-level="6">Средний</button>
+          <button class="level__choice-item button-three" data-level="9">Сложный</button>
+        </main>
+        <div class = "level__start start">
+          <button id="start" class="level__start-button">Начать игру</button>
+          <div class="start__cards cards">
+            <img src="images/startpage/cardone.png" alt="first card" class="cards__item cards__first">
+            <img src="images/startpage/cardtwo.png" alt="second card" class="cards__item cards__second">
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

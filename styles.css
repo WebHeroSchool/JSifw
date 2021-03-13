@@ -139,4 +139,50 @@
   min-height: 1024px;
   min-width: 1440px;
 }
+
+.card-area {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 1024px;
+  min-width: 1440px;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 341px;
+  width: 218px;
+}
+
+.flip-card-inner {
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.flip-card-front, .flip-card-back {
+  height: 341px;
+  position: absolute;
+  width: 218px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.image {
+  height: 341px;
+  width: 218px;
+}
+
+.card-area {
+  display: flex;
+  align-items: center;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
 \n 
