@@ -1,7 +1,7 @@
 /* * {
   border: dashed 1px red;
-} */
-
+} 
+*/
 .base {
   background: url(images/startpage/background.png);
   background-size: cover;
@@ -144,8 +144,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  max-width: 800px;
+  margin-left: 370px;
   min-height: 1024px;
-  min-width: 1440px;
 }
 
 .flip-card {
@@ -177,12 +178,25 @@
   width: 218px;
 }
 
-.card-area {
-  display: flex;
-  align-items: center;
-}
-
 .rotate {
   transform: rotateY(180deg);
+}
+
+.flip-card:first-child {
+  margin-right: 24px;
+}
+.card-area-six {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-area-nine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 0 120px;
+  max-height: 600px;
+  max-width: 1300px;
 }
 \n 
