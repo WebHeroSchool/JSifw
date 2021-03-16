@@ -58,7 +58,7 @@ function rotateCard(event) {
     event.target.parentElement.parentElement.classList.add('rotate');
     gameOver = true;
   } else {
-    setTimeout(() => window.location.reload(), 1000);
+    setTimeout(() => window.location.reload(), 300);
   }
 }
 
